@@ -15,12 +15,6 @@
 #include <vector>
 
 namespace traumweh::ircpp {
-struct IRCSender {
-  std::string username;
-  std::string userid;
-  std::string msgid;
-};
-
 struct IRCMessage {
   std::optional<std::string> raw;
   std::unordered_map<std::string, std::variant<bool, std::string>> tags;
